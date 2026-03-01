@@ -8,6 +8,10 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    allowedHosts: [
+      "sandesh-balakrishna.onrender.com",
+      ".onrender.com", // preview deployments
+    ],
     hmr: {
       overlay: false,
     },
