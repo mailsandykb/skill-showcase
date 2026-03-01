@@ -4,7 +4,8 @@ services:
   - type: web
     name: skill-showcase
     runtime: static
-    buildCommand: npm install && npm run build
+    # Force production build so JSX uses production runtime (avoids _jsxDEV is not a function)
+    buildCommand: npm install && NODE_ENV=production npm run build
     staticPublishPath: ./dist
     headers:
       # Required for ES module scripts – without this, .js is served as binary/octet-stream
