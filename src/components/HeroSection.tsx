@@ -10,7 +10,7 @@ const HeroSection = () => {
         backgroundImage: `linear-gradient(hsl(var(--navy)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--navy)) 1px, transparent 1px)`,
         backgroundSize: '60px 60px'
       }} />
-      
+
       {/* Gradient orb */}
       <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full opacity-10 blur-[120px]"
         style={{ background: 'radial-gradient(circle, hsl(217 71% 45%), transparent)' }} />
@@ -25,8 +25,8 @@ const HeroSection = () => {
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-12 bg-primary" />
-              <span className="text-primary font-display text-sm tracking-[0.2em] uppercase">
-                Data Scientist · Product Leader · Technologist
+              <span className="text-primary font-display text-md tracking-[0.2em] uppercase">
+                Technology · Product · Leadership
               </span>
             </div>
 
@@ -37,9 +37,9 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-muted-foreground text-lg leading-relaxed max-w-lg mb-8">
-              Full-stack Data Scientist at WalmartLabs with 15+ years of experience spanning 
-              technology, product strategy, and people leadership. Driving impact through 
-              data-driven innovation, AI solutions, and scalable architectures.
+              Strategic Technology and Product Professional with over 15 years of experience at the intersection of Technology, Product and Leadership. Proven track record of navigating complex AI frontiers—from developing data pipelines to scaling ML and AI solutions.
+              Adept at bridging the gap between technical feasibility and business viability, I have led several cross-functional initiatives delivering measurable outcomes. Beyond the code, I am a seasoned communicator and people developer, having mentored dozens of professionals and led organizational growth initiatives.
+              I am committed to building the "what’s next" in the product landscape by leveraging AI not just as a feature, but as a core driver of customer value and operational excellence.
             </p>
 
             <div className="flex flex-wrap gap-3 mb-8">
@@ -75,7 +75,7 @@ const HeroSection = () => {
               {/* Decorative frame */}
               <div className="absolute -inset-4 rounded-2xl border border-primary/20 -rotate-3" />
               <div className="absolute -inset-4 rounded-2xl border border-primary/10 rotate-2" />
-              
+
               <div className="relative w-72 h-80 lg:w-80 lg:h-96 rounded-2xl overflow-hidden glow-border">
                 <img
                   src={sandeshPhoto}

@@ -2,6 +2,24 @@ import DetailPageLayout from "@/components/DetailPageLayout";
 
 const items = [
   {
+    role: "Volunteer Product Leaders Forum",
+    company: "PLF",
+    bullets: [
+      "Helped organize a city wide annual conference product leaders drawing 150+ attendees -  I have added value across teams - from venue finalization to Speakers shortlist to field and digital marketing to draw attendees to the conference ensuring a successful conference"
+    ],
+    results: ["Organized Annual Conference - Convergence", "150+ attendees", "Speakers from top companies"],
+  },
+  {
+    role: "AI Workshop Instructor",
+    company: "CMRIT College – TMBA Batch",
+    bullets: [
+      "Conducted multiple 3-hour live AI workshops covering key concepts in AI along with agent building using tools like n8n and LangChain.",
+      "Hands-on sessions on building AI agents, prompt engineering, and practical AI application development.",
+      "Feedback score of 4 out of 5"
+    ],
+    results: ["3-hour live workshops", "n8n & LangChain", "Agent building"],
+  },
+  {
     role: "People Development & Club Leadership",
     company: "Walmart",
     bullets: [
@@ -11,15 +29,6 @@ const items = [
       "Part of interview panel at Walmart for data engineering profiles.",
     ],
     results: ["8→22 members (2.75x growth)", "80-person area meeting", "VP presentation"],
-  },
-  {
-    role: "AI Masterclass Speaker",
-    company: "Multiple Venues",
-    bullets: [
-      "Conducted AI masterclasses and speaking assignments, sharing insights on applied AI, machine learning, and agentic systems.",
-      "Conducted multiple 3-hour live AI workshops for TMBA batch at CMRIT college covering AI concepts and agent building with n8n and LangChain.",
-    ],
-    results: ["3-hour live masterclasses", "AI agent workshops"],
   },
   {
     role: "Technical Knowledge Sharing",

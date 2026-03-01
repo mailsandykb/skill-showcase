@@ -2,26 +2,34 @@ import DetailPageLayout from "@/components/DetailPageLayout";
 
 const items = [
   {
-    role: "Full Stack Data Scientist",
-    company: "WalmartLabs",
-    period: "Jul 2021 – Present",
-    bullets: [
-      "Led and developed DS module for estimating delivery duration for Walmart MX Marketplace orders using XGBoost and LightGBM.",
-      "Scaled a time series forecasting solution using fbprophet from PoC to 5 countries with single platform architecture.",
-      "Developed MLOPS maturity dashboard on Looker, improving maturity score from 1 to 3 on a 5-point scale.",
-    ],
-    results: ["5-country scale", "MLOPS score 1→3", "fbprophet at scale"],
-  },
-  {
     role: "AI Consultant",
     company: "Delightloop.com",
+    period: "Nov 2025 - Present",
     link: "https://delightloop.com",
     bullets: [
+      "Built an AI call agent that calls up qualified leads and nudges them to signup for events and flags the action items from the call",
+      "Setup AWS system (BEDROCK AGENTCORE & ECS Containers) including CICD via github actions for delightloop agent work effort",
+      "Developed a chatbot named delightBot to add users to a marketing campaign directly via telegram chats using n8n",
       "Developed gift recommender AI agents using Langgraph to generate hyper-personalized gifts and messaging for B2B customers.",
-      "Architected a multi-channel outreach agentic AI planner and coordinated with vendor partners to implement the system.",
+      "Architected a multi-channel outreach agentic AI planner that does Discover, Outreach, Nudge, Accept workflow and coordinated with vendor partners to implement the system.",
     ],
     results: ["Langgraph agents", "Multi-channel AI planner", "B2B personalization"],
   },
+
+  {
+    role: "Full Stack Data Scientist",
+    company: "WalmartLabs",
+    period: "Jul 2021 – Apr 2025",
+    bullets: [
+      "Recommendation System: Developed an RFM score based recommendation system to recommend items for the category page",
+      "Recommendation System: Developed and scaled an association rules–based recommendation system for the Bought Also Bought feature using FPGrowth and PySpark.",
+      "Regression: Led and developed DS module for estimating delivery duration for Walmart MX Marketplace orders using XGBoost and LightGBM.",
+      "Time Series: Scaled a time series forecasting solution using fbprophet from PoC to 5 countries with single platform architecture.",
+      "MLOPS: Developed MLOPS maturity dashboard on Looker, improving maturity score from 1 to 3 on a 5-point scale.",
+    ],
+    results: ["2.2% conversion lift & $1.1M annualized GMV - FP growth", "5-country scale for Time series algo", "MLOPS score improvement 1→3"],
+  },
+
   {
     role: "Data Engineering Lead",
     company: "WalmartLabs",
@@ -35,15 +43,6 @@ const items = [
       "Reduced SAP HANA view load time from 450 seconds to 16–20 seconds via push-down filter strategy.",
     ],
     results: ["£125K saved", "60% faster jobs", "NULL 66%→18%", "HANA 450s→16s", "46 dept scale"],
-  },
-  {
-    role: "AI Workshop Instructor",
-    company: "CMRIT College – TMBA Batch",
-    bullets: [
-      "Conducted multiple 3-hour live AI workshops covering key concepts in AI along with agent building using tools like n8n and LangChain.",
-      "Hands-on sessions on building AI agents, prompt engineering, and practical AI application development.",
-    ],
-    results: ["3-hour live workshops", "n8n & LangChain", "Agent building"],
   },
   {
     role: "Software Engineer",
