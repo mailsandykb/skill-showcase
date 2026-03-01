@@ -1,0 +1,29 @@
+# Render Blueprint – static site with correct MIME types for JS/CSS
+# Fixes: "Expected a JavaScript module script but the server responded with a MIME type of binary/octet-stream"
+services:
+  - type: web
+    name: skill-showcase
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    headers:
+      # Required for ES module scripts – without this, .js is served as binary/octet-stream
+      - path: /**/*.js
+        name: Content-Type
+        value: application/javascript
+      - path: /*.js
+        name: Content-Type
+        value: application/javascript
+      - path: /**/*.mjs
+        name: Content-Type
+        value: application/javascript
+      - path: /*.mjs
+        name: Content-Type
+        value: application/javascript
+      # Optional: ensure CSS is served with correct MIME type
+      - path: /**/*.css
+        name: Content-Type
+        value: text/css
+      - path: /*.css
+        name: Content-Type
+        value: text/css
